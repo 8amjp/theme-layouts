@@ -10,6 +10,7 @@
 <title>{{ page.title }} | {{ site.title }}</title>
 {% endif %}
 {% seo title=false %}
+<meta name="og:type" content="{{ site.type }}">
 <meta name="twitter:image" content="{{ site.image | absolute_url }}">
 <meta name="twitter:description" content="{{ site.description | strip }}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
