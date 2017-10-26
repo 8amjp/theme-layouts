@@ -3,16 +3,16 @@ layout: default
 ---
 
 <div class="container">
-  <section class="d-flex justify-content-end py-3">
+  <div class="d-flex justify-content-end py-3">
     <a href="{{ site.github.repository_url }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
     <a href="{{ site.github.zip_url }}" id="download-zip" class="btn btn-outline-primary btn-sm" role="button"><span>Download .zip</span></a>
     <a href="{{ site.github.wiki_url }}" id="wiki" class="btn btn-outline-primary btn-sm" role="button"><span>Wiki</span></a>
-  </section>
-  <section id="README" class="py-3">
-  {{ content }}
-  </section>
+  </div>
+  <article class="markdown-body">
+    {{ content }}
+  </article>
   {% if site.index == 'auto' %}
-  <section class="row">
+  <div class="row">
     <div class="col-sm-12 col-md-3">
       <h2 class="h3">目次</h2>
     </div>
@@ -26,7 +26,7 @@ layout: default
       {% endfor %}
       </ul>
     </div>
-  </section>
+  </div>
   {% endif %}
   <hr>
   <footer class="py-3">
