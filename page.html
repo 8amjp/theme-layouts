@@ -13,10 +13,12 @@ layout: default
 
 {% if prev %}
 <header>
-  <svg height="32" class="octicon octicon-chevron-up" viewBox="0 0 10 16" version="1.1" width="20" aria-hidden="true">
-  <path fill-rule="evenodd" d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5z"></path>
-  </svg>
-  <a class="btn btn-light btn-block" role="button" href="{{ prev.url | relative_url }}">{{ prev.title }}</a>
+  <a class="btn btn-light btn-block" role="button" href="{{ prev.url | relative_url }}">
+    <svg height="32" class="octicon octicon-chevron-up" viewBox="0 0 10 16" version="1.1" width="20" aria-hidden="true">
+    <path fill-rule="evenodd" d="M10 10l-1.5 1.5L5 7.75 1.5 11.5 0 10l5-5z"></path>
+    </svg>
+    <p>{{ prev.title }}</p>
+  </a>
 </header>
 {% endif %}
 <div class="container">
@@ -29,9 +31,11 @@ layout: default
 </div>
 {% if next %}
 <footer>
-  <a class="btn btn-light btn-block btn-lg" role="button" href="{{ next.url | relative_url }}">{{ next.title }}</a>
-  <svg height="32" class="octicon octicon-chevron-down" viewBox="0 0 10 16" version="1.1" width="20" aria-hidden="true">
-  <path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"></path>
-  </svg>
+  <a class="btn btn-light btn-block btn-lg" role="button" href="{{ next.url | relative_url }}">
+    <p>{{ next.title }}</p>
+    <svg height="32" class="octicon octicon-chevron-down" viewBox="0 0 10 16" version="1.1" width="20" aria-hidden="true">
+    <path fill-rule="evenodd" d="M5 11L0 6l1.5-1.5L5 8.25 8.5 4.5 10 6z"></path>
+    </svg>
+  </a>
 </footer>
 {% endif %}
