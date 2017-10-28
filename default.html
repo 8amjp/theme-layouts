@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.9.0/github-markdown.min.css">
+<link rel="stylesheet" href="https://8novels.github.io/octicons/lib/octicons.css">
 {% if prev %}
 <link rel="prev" href="{{ prev.url | relative_url }}">
 {% endif %}
@@ -42,7 +43,7 @@
 {% if site.image %}
     <img src="{{ site.image | relative_url }}" width="30" height="30" alt="{{ site.title | escape }}">
 {% else %}
-    {% octicon book %}
+    <span class="octicon octicon-book"></span>
 {% endif %}
   </a>
   <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#modal">
